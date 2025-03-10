@@ -21,7 +21,7 @@ def home(request):
     featured2 = Blog.objects.filter(type="Featured").order_by('-created_at')[2:6]
     allPosts = Blog.objects.all().order_by('-created_at')#[6:]
     active_styler = 'rd-nav-item active'
-    paginator = Paginator(allPosts, 2)
+    paginator = Paginator(allPosts, 9)
     page = request.GET.get('page')
     try:
         posts = paginator.page(page)

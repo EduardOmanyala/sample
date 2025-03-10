@@ -12,8 +12,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['sample.site-gist.xyz','www.sample.site-gist.xyz']
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['sample.site-gist.xyz','www.sample.site-gist.xyz']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -44,7 +44,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_auto_logout.middleware.auto_logout',
-    'core.middleware.TrackGetRequestMiddleware',
 ]
 
 AUTH_USER_MODEL = 'custom_user.User'
