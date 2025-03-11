@@ -21,7 +21,7 @@
             <img src="{{ obj.image.url }}" class="card-img-top" alt="...">
             {% endif %}
             <div class="card-body">
-              <a href="#" class="card-title">{{ obj.title }}</a>
+              <a href="{% url 'post-detail' obj.id obj.slug %}" class="card-title">{{ obj.title }}</a>
                               
             </div>
           </div>

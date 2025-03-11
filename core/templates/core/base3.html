@@ -172,7 +172,7 @@
                     <!-- Post Minimal 2-->
                     {% for obj in mainsfooter %}
                     <article class="post post-minimal-2">
-                      <p class="post-minimal-2-title"><a href="{% url 'post-detail' obj.slug obj.id %}">{{ obj.title }}</a></p>
+                      <p class="post-minimal-2-title"><a href="{% url 'post-detail' obj.id obj.slug %}">{{ obj.title }}</a></p>
                       <div class="post-minimal-2-time">
                         <time datetime="2019-05-04">{{ obj.created_at|date:"F d, Y" }}</time>
                       </div>

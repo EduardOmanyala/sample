@@ -15,7 +15,7 @@
                 <div class="row">
                   <div class="col-md-10" style="background-color: rgba(0, 0, 0, 0.2);padding-bottom:1rem;">
                    
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span></span><span class="font-weight-bold">{{ obj.title|truncatewords:8 }}</span></h2><a class="button button-default-outline button-ujarak" href="{% url 'post-detail' obj.slug obj.id %}" data-caption-animate="fadeInLeft" data-caption-delay="0">Read More</a>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span></span><span class="font-weight-bold">{{ obj.title|truncatewords:8 }}</span></h2><a class="button button-default-outline button-ujarak" href="{% url 'post-detail' obj.id obj.slug %}" data-caption-animate="fadeInLeft" data-caption-delay="0">Read More</a>
               
                   </div>
                 </div>
@@ -48,7 +48,7 @@
               <img src="{{ obj.image.url }}" class="card-img-top" alt="...">
               {% endif %}
               <div class="card-body">
-                <a style="color: black;" href="{% url 'post-detail' obj.slug obj.id %}" class="card-title">{{ obj.title|truncatewords:12 }}</a>
+                <a style="color: black;" href="{% url 'post-detail' obj.id obj.slug %}" class="card-title">{{ obj.title|truncatewords:12 }}</a>
                 <span class="badge badge-pill badge-primary">Primary</span>
               </div>
             </div>
@@ -95,7 +95,7 @@
                   <div class="tab-content">
                     <div class="tab-pane fade show active" id="tabs-7-1">
                       <p>{{ obj.main|safe|truncatewords:30 }}</p>
-                      <div class="group-md group-middle"><a class="button button-black-outline button-md" href="{% url 'post-detail' obj.slug obj.id %}">Read More</a></div>
+                      <div class="group-md group-middle"><a class="button button-black-outline button-md" href="{% url 'post-detail' obj.id obj.slug %}">Read More</a></div>
                     </div>
                   </div>
                 </div>
@@ -127,7 +127,7 @@
                 <img src="{{ obj.image.url }}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-                  <a href="{% url 'post-detail' obj.slug obj.id %}" class="card-title">{{ obj.title|truncatewords:10 }}</a>
+                  <a href="{% url 'post-detail' obj.id obj.slug %}" class="card-title">{{ obj.title|truncatewords:10 }}</a>
                                   
                 </div>
               </div>
@@ -162,7 +162,7 @@
                     <div class="product-big-body">
                       <h5 class="product-big-title"><a href="#">{{ obj.title|truncatewords:10 }}</a></h5>
                       <div class="group-sm group-middle justify-content-start">
-                      <p class="product-big-text">{{ obj.main|safe|truncatewords:30 }}</p><a class="button button-black-outline button-ujarak" href="{% url 'post-detail' obj.slug obj.id %}">Read More</a>
+                      <p class="product-big-text">{{ obj.main|safe|truncatewords:30 }}</p><a class="button button-black-outline button-ujarak" href="{% url 'post-detail' obj.id obj.slug %}">Read More</a>
                       <div class="product-big-price-wrap"><span class="product-big-price">New</span></div>
                     </div>
                   </div>
@@ -200,7 +200,7 @@
                 <img src="{{ obj.image.url }}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-                  <a href="{% url 'post-detail' obj.slug obj.id %}" class="card-title">{{ obj.title|truncatewords:10 }}</a>
+                  <a href="{% url 'post-detail' obj.id obj.slug %}" class="card-title">{{ obj.title|truncatewords:10 }}</a>
                                   
                 </div>
               </div>
