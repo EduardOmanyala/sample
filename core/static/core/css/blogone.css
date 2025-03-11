@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 10% 80% 10%;
 }
-.blog-div-three {
+.blog-div-four {
     display: grid;
     grid-template-columns: 20% 60% 20%;
 }
@@ -31,7 +31,7 @@
         margin-bottom: 2%;
         grid-template-columns: 100%;
     }
-    .blog-div-three {
+    .blog-div-four {
         display: grid;
         margin-top: 2%;
         margin-left: 2%;
@@ -60,7 +60,7 @@
         margin-bottom: 2%;
         grid-template-columns: 100%;
     }
-    .blog-div-three {
+    .blog-div-four {
         display: grid;
         margin-top: 2%;
         margin-left: 2%;
